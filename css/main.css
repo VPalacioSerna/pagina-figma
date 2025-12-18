@@ -30,7 +30,7 @@
     @media (min-width: 992px) {
         grid-template: 
         "card img" auto /
-        1fr 1fr;
+        40% 60%;
     }
 }
 
@@ -359,9 +359,43 @@
 }
 
 
+/*------------------------------------Features---------------------------------------*/
+.container-feature > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+}
 
+.container-feature {
+    justify-content: center;
+    margin: 20px;
+    display: grid;
+    grid-template: 
+    "teams" 1fr
+    "cloud" 1fr
+    "analytics" 1fr /
+    100%;
 
+    .card-teams {
+        grid-area: teams;
+    }
 
+    .card-cloud {
+        grid-area: cloud;
+    }
+
+    .card-analytics {
+        grid-area: analytics;
+    }
+
+    @media (min-width: 992px) {
+       grid-template: 
+        "teams cloud analytics" 1fr /
+        1fr 1fr 1fr; 
+    }
+
+}
 
 
 
