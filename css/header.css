@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/*Container en grid*/
+.grid-container > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    text-align: center; 
+}
+
+.grid-container {
+    display: grid;
+    min-height: 100vh; /*Ocupa toda la pantalla*/
+    /*Diseño para pantalla pequeña*/
+    grid-template: 
+    "header" auto
+    "main" 1fr
+    "footer" 100px /
+    100%;
+
+    .header {
+        grid-area: header;
+        background-color: aqua;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: bisque;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: cadetblue;
+    }
+
+    @media (min-width: 992px) {
+        /*Diseño para pantalla grande*/
+        grid-template: 
+            "header" 100px
+            "main" 1fr
+            "footer" 100px /
+            100%;
+    }
+}
+
+
+/*header*/
+
+.container-header > * {
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+    width: 100%;
+}
+
+.container-header {
+    width: 100%;
+    height: 100%;
+    gap: 2px;
+    display: grid;
+    grid-template: 
+    "logo" auto
+    "nav" auto
+    "login" auto /
+    1fr;
+
+    .container-logo {
+        grid-area: logo;
+        background-color: cornflowerblue;
+    }
+
+    .container-nav {
+        grid-area: nav;
+        background-color: rgb(224, 143, 118);
+    }
+
+    .container-login {
+       grid-area: login; 
+       background-color: rgb(173, 128, 221);
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+            "logo nav login" 1fr /
+            1fr 2fr 1fr;
+    }
+}
+
+/*Logo*/
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
+}
+
+.container-logo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54BD95;
+    font-size: 2.5rem;
+
+    @media (min-width: 992px) {
+        justify-content: right;
+        align-items: center;
+    }
+}
+
+/*Navegador*/
+
+.nav {
+    height: 100%;
+}
+
+.ul-nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    @media (min-width: 992px) {
+        justify-content: right;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
+
+.item-nav a {
+    color: gray;
+}
+
+.item-nav:first-child a {
+    color: black;
+}
+
+/*navegador */
+.ul-nav-login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    @media (min-width: 992px) {
+        justify-content: left;
+        align-items: center;
+        margin-left: 20px;
+    }
+}
+
+.item-nav-login a{
+    color: gray;
+}
+
+.item-nav-signup {
+    background-color: #54BD95;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.item-nav-signup a {
+    color: white;
+}
+
+
+
