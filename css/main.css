@@ -36,6 +36,14 @@
 
 /*card hero*/
 
+.container-card-hero{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
 .card-hero {
     display: flex;
     flex-direction: column;
@@ -292,6 +300,18 @@
 
 
 /*List support*/
+.title-card-support {
+    font-size: 1.1rem;
+}
+
+.text-card-support {
+    font-size: 0.8rem;
+}
+
+.cont-img img {
+    background-color: white;
+    padding: 5px;
+}
 
 /*Item 1*/
 .item-publishing > *{
