@@ -2,7 +2,6 @@
 
 /*------------------------------------Hero---------------------------------------*/
 .container-hero > * {
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: center; 
@@ -19,12 +18,12 @@
 
     .card-hero {
         grid-area: card;
-        background-color: rgb(167, 199, 200);
+        
     }
 
     .img-hero {
         grid-area: img;
-        background-color: chocolate;
+        
     }
 
     @media (min-width: 992px) {
@@ -118,7 +117,6 @@
 /*------------------------------------Companies---------------------------------------*/
 
 .container-companies > * {
-    border: 2px solid gray;
     border-radius: 7px;
     text-align: center;
 }
@@ -136,12 +134,12 @@
 
     .container-title {
         grid-area: title;
-        background-color: aqua;
+        
     }
 
     .container-imgs {
         grid-area: imgs;
-        background-color: #52BD94;
+        margin-bottom: 30px;
     }
 
     @media (min-width: 992px) {
@@ -160,7 +158,6 @@
 
 /*manejo de imagenes*/
 .container-imgs > * {
-    border: 2px solid gray;
     border-radius: 7px;
     text-align: center;
 }
@@ -216,7 +213,6 @@
 
 /*------------------------------------Support---------------------------------------*/
 .container-support > * {
-    border: 2px solid gray;
     border-radius: 7px;
     text-align: center;
     justify-content: center;
@@ -225,10 +221,9 @@
 }
 
 .container-support {
-    border: 2px solid gray;
     justify-content: center;
     display: grid;
-    background-color: blueviolet;
+    background-color: rgb(246, 251, 251);
     margin: 15px 0;
 
     grid-template: 
@@ -315,7 +310,6 @@
 
 /*Item 1*/
 .item-publishing > *{
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: left;     
@@ -330,7 +324,6 @@
 
 /*Item 2*/
 .item-analytics > *{
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: left;     
@@ -345,7 +338,6 @@
 
 /*Item 3*/
 .item-engagement > *{
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: left;     
@@ -361,7 +353,6 @@
 
 /*------------------------------------Features---------------------------------------*/
 .container-feature > * {
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: center; 

@@ -15,7 +15,6 @@ body {
 
 /*Container en grid*/
 .grid-container > * {
-    border: 2px solid gray;
     border-radius: 7px;
     text-align: center; 
 }
@@ -32,17 +31,17 @@ body {
 
     .header {
         grid-area: header;
-        background-color: aqua;
+        
     }
 
     .main {
         grid-area: main;
-        background-color: bisque;
+        
     }
 
     .footer {
         grid-area: footer;
-        background-color: cadetblue;
+        background-color: #54BD95;
     }
 
     @media (min-width: 992px) {
@@ -60,7 +59,6 @@ body {
 
 .container-header > * {
     box-sizing: border-box;
-    border: 2px solid gray;
     border-radius: 7px;
     padding: 10px;
     text-align: center; 
@@ -80,17 +78,17 @@ body {
 
     .container-logo {
         grid-area: logo;
-        background-color: cornflowerblue;
+        
     }
 
     .container-nav {
         grid-area: nav;
-        background-color: rgb(224, 143, 118);
+        
     }
 
     .container-login {
        grid-area: login; 
-       background-color: rgb(173, 128, 221);
+       
     }
 
     @media (min-width: 992px) {
